@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hito Ajax</title>
+  <meta charset="utf-8">
+ <style type="text/css">
+ *{font-family:sans-serif;} a:link {text-decoration:none;} select{font-size:18px;}
+ div div {color: blue; background-color:#F1FEC6; font-size: 20px; float:left; border: solid; margin: 20px; padding:15px;}
+ </style>
+ 
+<script>
+function mostrarSugerencia(str) {
+var jugadorElegido='';
+if (str=='kevin') {jugadorElegido='Kevin';}
+else if (str=='lebron') {jugadorElegido='Lebron';}
+else if (str=='zion') {jugadorElegido='Zion';}
+else if (str=='joel') {jugadorElegido='Joel';}
+else {jugadorElegido='none';}
+
+var xmlhttp;
+if (str.length==0 ||jugadorElegido=='none') { document.getElementById("txtInformacion").innerHTML="No hay ningún jugador elegido";
+mostrarJugadores(); return; }
+xmlhttp=new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+    var jsonResponse = xmlhttp.responseText;
+    var objeto_json = JSON.parse(jsonResponse);
+    jugadoresRecibidos = objeto_json.listadoJugadores.jugador;
+ 
+    for (var i=0; i<jugadoresRecibidos.length;i++) {
+    var nombreJugador = objeto_json.listadoJugadores.jugador[i].nombre;
+        if (nombreJugador==jugadorElegido) {
+        document.getElementById("txtInformacion").innerHTML = 'El jugador elegido en la lista es '+nombreJugador+ ' y tiene indice '+i;
+        var informacionJugador = objeto_json.listadoJugadores.jugador[i].Informacion;
+        mostrarJugadores(informacionJugador);
+        }
+    }
+    
+}
+}
+
+xmlhttp.open("GET","listadoJugadores.json?nocache=' + (new Date()).getTime()");
+xmlhttp.send();
+}
+
+function mostrarJugadores (arrayInformacion) {
+var nodoMostrarResultados = document.getElementById('listaInformacion');
+if (!arrayInformacion) {nodoMostrarResultados.innerHTML = ''; return}
+var contenidosAMostrar = '';
+for (var i=0; i<arrayInformacion.length;i++) {
+    contenidosAMostrar = contenidosAMostrar+'<div id="jugadores'+i+'">';
+    contenidosAMostrar += '<a href="https://es.nba.com/">' +arrayInformacion[i]+ '</a></div>';
+}
+if (contenidosAMostrar) {nodoMostrarResultados.innerHTML = contenidosAMostrar;}
+}
+</script>
+</head>
+
+<body style="margin:20px;"><h2>Elige un jugador:</h2>
+<form action="">
+ <select onchange="mostrarSugerencia(this.value)">
+ <option value="none">Elige</option> 
+  <option value="kevin">Kevin</option>
+  <option value="lebron">Lebron</option>
+  <option value="zion">Zion</option>
+  <option value="joel">Joel</option>
+</select>
+</form>
+<br/>
+<p>Informacion sobre operacion en segundo plano con Ajax: <span style="color:brown;" id="txtInformacion"></span></p>
+<div id="listaInformacion"> </div>
+</body></html>

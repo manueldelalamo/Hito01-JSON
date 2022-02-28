@@ -1,0 +1,57 @@
+[{	
+	"salario": "$40.108.950",
+	"nombre": "Kevin",
+	"apellidos": "Wayne Durant",
+	"informacion": {
+		"nacido": "29/09/1988",
+		"nacionalidad": "Estados Unidos",
+		"procedencia": "Texas",
+		"draft": "2007 / 2º",
+		"foto": "durant.jpg"
+	},
+	"posicion": "Ala-pívot",
+	"altura": 2.08,
+	"logros": ["Campeonato 2016-17", "Campeonato 2017-18", "MVP 2013-14", "MVP 2016-17"]
+}, {	
+	"salario": "$39.219.566",
+	"nombre": "LeBron",
+	"apellidos": "Raymone James",
+	"informacion": {
+		"nacido": "30/12/1984",
+		"nacionalidad": "Estados Unidos",
+		"procedencia": " St. Vincent-St. Mary's HS",
+		"draft": "2003 / 1º",
+		"foto": "lebron.jpg"
+	},
+	"posicion": "Alero/Ala-pívot",
+	"altura": 2.03,
+	"logros": ["Campeonato 2011-12", "Campeonato 2012-13", "Campeonato 2015-16", "Campeonato 2019-20"]
+}, {	
+	"salario": "$10.245.480",
+	"nombre": "Zion",
+	"apellidos": "Lateef Williamson",
+	"informacion": {
+		"nacido": "06/07/2000",
+		"nacionalidad": "Estados Unidos",
+		"procedencia": "Duke",
+		"draft": "2019 / 1º",
+		"foto": "zion.jpg"
+	},
+	"posicion": "Ala-pívot",
+	"altura": 1.98,
+	"logros": ["Quinteto Ideal de Novatos"]
+},{	
+	"salario": "$29.542.010",
+	"nombre": "Joel",
+	"apellidos": "Hans Embiid",
+	"informacion": {
+		"nacido": "16/03/1994",
+		"nacionalidad": "Camerun",
+		"procedencia": "Kansas",
+		"draft": "2014 / 3º",
+		"foto": "joel.jpg"
+	},
+	"posicion": "Pívot",
+	"altura": 2.13,
+	"logros": ["Segundo Quinteto Ideal", "Segundo Quinteto Ideal Defensivo", "Quinteto Ideal de Novatos", "4 Equipo de las Estrellas"]
+} ]

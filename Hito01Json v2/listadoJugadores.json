@@ -1,0 +1,58 @@
+{
+  "listadoJugadores": {
+    "jugador": [
+      {
+        "nombre": "Kevin",
+        "apellidos": "Wayne Durant",
+        "textoJugador": "Campeonato 2016-17 / Campeonato 2017-18 / MVP 2013-14 /MVP 2016-17",
+        "Informacion": [
+          "Nacido el 29/09/1988",
+          "Nacionalidad: Estados Unidos",
+          "Procedencia: Texas",
+          "Draft: 2007 / 2º",
+          "Posición: Ala-pívot",
+          "Altura: 2.08"
+        ]
+      },
+      {
+        "nombre": "Lebron",
+        "apellidos": "Raymone James",
+        "textoJugador": "Campeonato 2011-12, Campeonato 2012-13, Campeonato 2015-16, Campeonato 2019-20",
+        "Informacion": [
+          "Nacido el 30/12/1984",
+          "Nacionalidad: Estados Unidos",
+          "Procedencia: St. Vincent-St. Mary's HS",
+          "Draft: 2003 / 1º",
+          "Posición: Alero/Ala-pívot",
+          "Altura: 2.03"
+        ]
+      },
+      {
+        "nombre": "Zion",
+        "apellidos": "Lateef Williamson",
+        "textoJugador": "Quinteto Ideal de Novatos",
+        "Informacion": [
+          "Nacido el 06/07/2000",
+          "Nacionalidad: Estados Unidos",
+          "Procedencia: Duke",
+          "Draft: 2019 / 1º",
+          "Posicion: Ala-pívot",
+          "Altura: 1.98"
+        ]
+      },
+      {
+        "nombre": "Joel",
+        "apellidos": "Hans Embiid",
+        "textoJugador": "Segundo Quinteto Ideal, Segundo Quinteto Ideal Defensivo, Quinteto Ideal de Novatos, 4 Equipo de las Estrellas",
+        "Informacion": [
+          "Nacido el 16/03/1994",
+          "Nacionalidad: Camerun",
+          "Procedencia: Kansas",
+          "Draft: 2014 / 3º",
+          "Posicion: Pívot",
+          "Altura: 2.13"
+        ]
+      }
+    ]
+  }
+}
